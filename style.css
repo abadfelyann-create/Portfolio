@@ -1,0 +1,2836 @@
+/* =========================================
+   FELY ANN C. ABAD
+   PERSONAL PORTFOLIO
+   DARK NAVY / BLUE THEME
+   ========================================= */
+
+:root {
+
+    --blue: #3b82f6;
+    --blue-dark: #2563eb;
+    --blue-light: #60a5fa;
+
+    --navy: #1e293b;
+    --dark: #111827;
+    --dark-two: #0f172a;
+
+    --white: #ffffff;
+    --cream: #f8fafc;
+
+    --text: #334155;
+    --muted: #64748b;
+
+    --light-blue: #eff6ff;
+    --border: #e2e8f0;
+
+    --shadow:
+        0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =========================================
+   RESET
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    color: var(--text);
+
+    background: var(--cream);
+
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.container {
+
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background:
+        rgba(248, 250, 252, 0.94);
+
+    backdrop-filter: blur(18px);
+
+    border-bottom:
+        1px solid rgba(15, 23, 42, 0.08);
+
+}
+
+
+.nav-container {
+
+    width: 90%;
+    max-width: 1150px;
+
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+/* =========================================
+   LOGO
+   ========================================= */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-weight: 700;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 21px;
+
+    color: var(--dark);
+
+}
+
+
+.logo span {
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--dark);
+
+    color: white;
+
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.nav-link {
+
+    padding:
+        8px 14px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    border-radius: 8px;
+
+    transition: .3s;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+
+    color: var(--blue-dark);
+
+    background:
+        var(--light-blue);
+
+}
+
+
+/* =========================================
+   MOBILE BUTTON
+   ========================================= */
+
+.menu-btn {
+
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 22px;
+
+    color: var(--dark);
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    padding:
+        130px 0 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #eef4fb 100%
+        );
+
+}
+
+
+.hero-bg-circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+.circle-one {
+
+    width: 500px;
+    height: 500px;
+
+    top: -200px;
+    right: -180px;
+
+    background:
+        rgba(59, 130, 246, 0.08);
+
+}
+
+
+.circle-two {
+
+    width: 350px;
+    height: 350px;
+
+    bottom: -150px;
+    left: -120px;
+
+    background:
+        rgba(30, 41, 59, 0.05);
+
+}
+
+
+.hero-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+/* =========================================
+   WELCOME
+   ========================================= */
+
+.welcome {
+
+    color: var(--blue-dark);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================
+   HERO TITLE
+   ========================================= */
+
+.hero-text h1 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(45px, 6vw, 72px);
+
+    line-height: 1.05;
+
+    color: var(--dark);
+
+}
+
+
+.hero-text h1 span {
+
+    display: block;
+
+    color: var(--blue-dark);
+
+}
+
+
+.hero-subtitle {
+
+    font-size: 17px;
+
+    color: var(--muted);
+
+    margin:
+        18px 0;
+
+}
+
+
+.hero-description {
+
+    max-width: 580px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+}
+
+
+/* =========================================
+   HERO BUTTONS
+   ========================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.main-btn,
+.outline-btn {
+
+    padding:
+        12px 20px;
+
+    border-radius: 8px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    font-weight: 600;
+
+    font-size: 13px;
+
+    transition: .3s;
+
+}
+
+
+.main-btn {
+
+    background: var(--dark);
+
+    color: white;
+
+    box-shadow:
+        0 10px 25px
+        rgba(15, 23, 42, 0.20);
+
+}
+
+
+.main-btn:hover {
+
+    background:
+        var(--blue-dark);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.outline-btn {
+
+    border:
+        1px solid var(--border);
+
+    background: white;
+
+    color: var(--dark);
+
+}
+
+
+.outline-btn:hover {
+
+    border-color:
+        var(--blue);
+
+    color:
+        var(--blue-dark);
+
+}
+
+
+/* =========================================
+   SOCIAL MEDIA
+   ========================================= */
+
+.social-area {
+
+    margin-top: 30px;
+
+}
+
+
+.social-area p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.social-icons {
+
+    display: flex;
+
+    gap: 9px;
+
+}
+
+
+.social-icons a {
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    transition: .3s;
+
+}
+
+
+.social-icons a:hover {
+
+    transform:
+        translateY(-4px);
+
+}
+
+
+.facebook {
+    background: #1877f2;
+}
+
+.instagram {
+    background: #475569;
+}
+
+.tiktok {
+    background: #111827;
+}
+
+.gmail {
+    background: #64748b;
+}
+
+
+/* =========================================
+   PROFILE
+   ========================================= */
+
+.profile-area {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.profile-card {
+
+    position: relative;
+
+    width: 400px;
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 18px;
+
+    box-shadow: var(--shadow);
+
+    transform:
+        rotate(2deg);
+
+    transition: .4s;
+
+}
+
+
+.profile-card:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-8px);
+
+}
+
+
+/* =========================================
+   PROFILE IMAGE - IMPROVED
+   ========================================= */
+
+.profile-image {
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #e2e8f0;
+
+}
+
+
+.profile-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    display: block;
+
+}
+
+
+.profile-info {
+
+    padding:
+        18px 10px 10px;
+
+}
+
+
+.profile-info span {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.profile-info h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 28px;
+
+    color: var(--dark);
+
+}
+
+
+.profile-info p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.profile-decoration {
+
+    position: absolute;
+
+    width: 400px;
+    height: 530px;
+
+    border:
+        2px solid #bfdbfe;
+
+    border-radius: 18px;
+
+    transform:
+        rotate(-7deg);
+
+}
+
+
+/* =========================================
+   FLOATING NOTES
+   ========================================= */
+
+.floating-note {
+
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: var(--shadow);
+
+    font-size: 20px;
+
+}
+
+
+.note-one {
+
+    top: 20px;
+    right: 20px;
+
+}
+
+
+.note-two {
+
+    bottom: 80px;
+    left: -20px;
+
+}
+
+
+.note-three {
+
+    bottom: 10px;
+    right: 30px;
+
+}
+
+
+/* =========================================
+   QUICK SECTION
+   ========================================= */
+
+.quick-section {
+
+    padding:
+        20px 0 80px;
+
+    background:
+        var(--cream);
+
+}
+
+
+.quick-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.quick-card {
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.05);
+
+}
+
+
+.quick-icon {
+
+    width: 45px;
+    height: 45px;
+
+    margin:
+        auto auto 12px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        var(--light-blue);
+
+    color:
+        var(--blue-dark);
+
+}
+
+
+.quick-card h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 18px;
+
+    color:
+        var(--dark);
+
+}
+
+
+.quick-card p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+.section {
+
+    padding:
+        100px 0;
+
+}
+
+
+.hobbies {
+
+    background:
+        #eef4f9;
+
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    max-width: 650px;
+
+    margin:
+        0 auto 50px;
+
+}
+
+
+.section-title span {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.section-title h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 42px;
+
+    color: var(--dark);
+
+    line-height: 1.2;
+
+    margin:
+        8px 0 12px;
+
+}
+
+
+.section-title p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   HOBBIES
+   ========================================= */
+
+.hobby-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.hobby-card {
+
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--border);
+
+    box-shadow:
+        0 10px 35px
+        rgba(15, 23, 42, 0.06);
+
+    transition: .35s;
+
+}
+
+
+.hobby-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+
+/* =========================================
+   HOBBY IMAGE - IMPROVED
+   ========================================= */
+
+.hobby-image {
+
+    height: 300px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #e2e8f0;
+
+}
+
+
+.hobby-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    transition: .5s;
+
+}
+
+
+.hobby-card:hover img {
+
+    transform:
+        scale(1.06);
+
+}
+
+
+.hobby-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        rgba(15, 23, 42, .68);
+
+    color: white;
+
+    opacity: 0;
+
+    transition: .3s;
+
+}
+
+
+.hobby-card:hover .hobby-overlay {
+
+    opacity: 1;
+
+}
+
+
+.hobby-overlay i {
+
+    font-size: 35px;
+
+}
+
+
+.hobby-content {
+
+    padding: 22px;
+
+}
+
+
+.hobby-content span {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+.hobby-content h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 22px;
+
+    margin:
+        5px 0;
+
+    color:
+        var(--dark);
+
+}
+
+
+.hobby-content p {
+
+    color:
+        var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+.scenic-card {
+
+    grid-column:
+        span 2;
+
+}
+
+
+/* =========================================
+   ABOUT
+   ========================================= */
+
+.about {
+
+    background:
+        white;
+
+}
+
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr .9fr;
+
+    gap: 60px;
+
+}
+
+
+.about-story {
+
+    padding:
+        10px 0;
+
+}
+
+
+.about-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hello-icon {
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        var(--dark);
+
+    color: white;
+
+    font-size: 25px;
+
+}
+
+
+.about-heading h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 28px;
+
+    color:
+        var(--dark);
+
+}
+
+
+.about-heading p {
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+.about-story > p {
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 16px;
+
+}
+
+
+.about-story strong {
+
+    color:
+        var(--blue-dark);
+
+}
+
+
+/* =========================================
+   PERSONAL DETAILS
+   ========================================= */
+
+.personal-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.detail-card {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+        #f8fafc;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 12px;
+
+}
+
+
+.detail-icon {
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 10px;
+
+    background:
+        var(--dark);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+}
+
+
+.detail-card span {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.detail-card h3 {
+
+    font-size: 15px;
+
+    color:
+        var(--dark);
+
+}
+
+
+.detail-card p {
+
+    color:
+        var(--muted);
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================
+   SKILLS
+   ========================================= */
+
+.skills-section {
+
+    margin-top: 80px;
+
+}
+
+
+.skills-title {
+
+    margin-bottom: 25px;
+
+}
+
+
+.skills-title span {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.skills-title h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 30px;
+
+    color:
+        var(--dark);
+
+}
+
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.skill-card {
+
+    padding: 18px;
+
+    background:
+        #f8fafc;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 10px;
+
+}
+
+
+.skill-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+}
+
+
+.skill-name {
+
+    font-weight: 600;
+
+    font-size: 13px;
+
+    color:
+        var(--dark);
+
+}
+
+
+.skill-name i {
+
+    color:
+        var(--blue-dark);
+
+    margin-right: 5px;
+
+}
+
+
+.skill-top strong {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 12px;
+
+}
+
+
+.skill-bar {
+
+    height: 6px;
+
+    background:
+        #dbe3eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.skill-bar span {
+
+    display: block;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #1e293b,
+            #3b82f6
+        );
+
+    border-radius: 20px;
+
+}
+
+
+/* =========================================
+   MY PETS
+   ========================================= */
+
+.pets {
+
+    background:
+        #eef4f9;
+
+}
+
+
+/* =========================================
+   PET PHOTOS - IMPROVED
+   ========================================= */
+
+.pets-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.pet-card {
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.07);
+
+    transition:
+        .3s ease;
+
+}
+
+
+.pet-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+
+/* =========================================
+   PET IMAGE - LARGER
+   ========================================= */
+
+.pet-image {
+
+    width: 100%;
+
+    height: 380px;
+
+    overflow: hidden;
+
+    background: #e2e8f0;
+
+}
+
+
+.pet-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    transition:
+        .4s ease;
+
+}
+
+
+.pet-card:hover .pet-image img {
+
+    transform:
+        scale(1.05);
+
+}
+
+
+/* =========================================
+   PET INFORMATION
+   ========================================= */
+
+.pet-info {
+
+    padding:
+        20px 22px 24px;
+
+}
+
+
+.pet-info span {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.pet-info h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 22px;
+
+    color:
+        var(--dark);
+
+    margin:
+        5px 0 7px;
+
+}
+
+
+.pet-info p {
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   PET VIDEO
+   ========================================= */
+
+.pet-video-section {
+
+    margin-top:
+        60px;
+
+}
+
+
+.pet-video-heading {
+
+    text-align:
+        center;
+
+    max-width:
+        650px;
+
+    margin:
+        0 auto 25px;
+
+}
+
+
+.pet-video-heading span {
+
+    color:
+        var(--blue-dark);
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.pet-video-heading h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        30px;
+
+    color:
+        var(--dark);
+
+    margin:
+        5px 0 8px;
+
+}
+
+
+.pet-video-heading p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================
+   VIDEO CARD
+   ========================================= */
+
+.pet-video-card {
+
+    width: 100%;
+
+    max-width:
+        850px;
+
+    margin:
+        40px auto 0;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        16px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        0 15px 40px
+        rgba(15, 23, 42, 0.10);
+
+    transition:
+        .3s ease;
+
+}
+
+
+.pet-video-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 20px 50px
+        rgba(15, 23, 42, 0.16);
+
+}
+
+
+.video-wrapper {
+
+    width:
+        100%;
+
+    background:
+        #0f172a;
+
+    overflow:
+        hidden;
+
+}
+
+
+.video-wrapper video {
+
+    width:
+        100%;
+
+    height:
+        auto;
+
+    display:
+        block;
+
+    aspect-ratio:
+        16 / 9;
+
+    object-fit:
+        cover;
+
+    background:
+        #0f172a;
+
+}
+
+
+.pet-video-info {
+
+    padding:
+        22px 25px 25px;
+
+}
+
+
+.pet-video-info h4 {
+
+    margin:
+        0 0 7px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        23px;
+
+    font-weight:
+        700;
+
+    color:
+        #111827;
+
+}
+
+
+.pet-video-info p {
+
+    margin:
+        0;
+
+    color:
+        #64748b;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.7;
+
+}
+
+
+.video-wrapper video::-webkit-media-controls-panel {
+
+    background:
+        rgba(15, 23, 42, 0.90);
+
+}
+
+
+/* =========================================
+   PLAYLIST
+   ========================================= */
+
+.playlist-section {
+
+    background:
+        white;
+
+}
+
+
+.music-player {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        .75fr 1.25fr;
+
+    background:
+        #f8fafc;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+
+.album-art {
+
+    min-height: 350px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1e293b,
+            #334155
+        );
+
+}
+
+
+.vinyl {
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        repeating-radial-gradient(
+            circle,
+            #0f172a 0px,
+            #0f172a 3px,
+            #1e293b 4px,
+            #1e293b 7px
+        );
+
+    box-shadow:
+        0 20px 35px
+        rgba(0, 0, 0, .30);
+
+}
+
+
+.vinyl-center {
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background:
+        var(--blue);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+}
+
+
+.player-main {
+
+    padding: 45px;
+
+}
+
+
+.playing-label {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.player-main h3 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 28px;
+
+    margin-top: 5px;
+
+    color:
+        var(--dark);
+
+}
+
+
+.player-main > p {
+
+    color:
+        var(--muted);
+
+    font-size: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.time-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color:
+        var(--muted);
+
+    font-size: 10px;
+
+}
+
+
+.time-row input {
+
+    flex: 1;
+
+}
+
+
+input[type="range"] {
+
+    appearance: none;
+
+    height: 5px;
+
+    background:
+        #dbe3eb;
+
+    border-radius: 20px;
+
+    outline: none;
+
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+
+    appearance: none;
+
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    background:
+        var(--blue);
+
+    cursor: pointer;
+
+}
+
+
+.player-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin:
+        25px 0;
+
+}
+
+
+.player-buttons button {
+
+    border: none;
+
+    background: transparent;
+
+    color:
+        var(--dark);
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+}
+
+
+.player-buttons .main-play {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background:
+        var(--dark);
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px
+        rgba(15, 23, 42, .25);
+
+}
+
+
+.player-buttons .main-play:hover {
+
+    background:
+        var(--blue-dark);
+
+}
+
+
+.volume {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color:
+        var(--muted);
+
+}
+
+
+.volume input {
+
+    flex: 1;
+
+}
+
+
+/* =========================================
+   PLAYLIST LIST
+   ========================================= */
+
+.playlist-list {
+
+    max-width: 850px;
+
+    margin:
+        25px auto 0;
+
+}
+
+
+.playlist-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding:
+        14px 16px;
+
+    margin-bottom: 8px;
+
+    border-radius: 10px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        #f8fafc;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.playlist-item:hover,
+.playlist-item.active {
+
+    border-color:
+        #93c5fd;
+
+    background:
+        var(--light-blue);
+
+}
+
+
+.track-number {
+
+    width: 25px;
+
+    color:
+        var(--muted);
+
+    font-size: 11px;
+
+}
+
+
+.track-icon {
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        var(--dark);
+
+    color: white;
+
+}
+
+
+.track-info {
+
+    flex: 1;
+
+}
+
+
+.track-info h4 {
+
+    font-size: 13px;
+
+    color:
+        var(--dark);
+
+}
+
+
+.track-info p {
+
+    color:
+        var(--muted);
+
+    font-size: 10px;
+
+}
+
+
+.track-play {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   CONNECT
+   ========================================= */
+
+.connect-section {
+
+    padding:
+        70px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf2fa,
+            #f8fafc
+        );
+
+}
+
+
+.connect-box {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.connect-box > div:first-child span {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.connect-box h2 {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 30px;
+
+    color:
+        var(--dark);
+
+}
+
+
+.connect-box p {
+
+    color:
+        var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+.connect-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+.connect-btn {
+
+    padding:
+        9px 14px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 11px;
+
+    display: flex;
+
+    gap: 7px;
+
+    align-items: center;
+
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+
+    padding:
+        50px 0;
+
+    text-align: center;
+
+    background:
+        #0f172a;
+
+    color:
+        white;
+
+}
+
+
+.footer-logo {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 22px;
+
+}
+
+
+.footer-logo span {
+
+    display: inline-flex;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 8px;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        var(--blue);
+
+    margin-right: 5px;
+
+}
+
+
+.footer p {
+
+    color:
+        #94a3b8;
+
+    font-size: 12px;
+
+    margin:
+        10px 0 20px;
+
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+
+}
+
+
+.footer-links a {
+
+    color:
+        #94a3b8;
+
+    font-size: 12px;
+
+}
+
+
+.footer-links a:hover {
+
+    color:
+        #60a5fa;
+
+}
+
+
+.copyright {
+
+    color:
+        #64748b;
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE - 900px
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .hero-container {
+
+        grid-template-columns:
+            1fr;
+
+        text-align: center;
+
+    }
+
+
+    .hero-description {
+
+        margin: auto;
+
+    }
+
+
+    .hero-buttons,
+    .social-icons {
+
+        justify-content: center;
+
+    }
+
+
+    .profile-area {
+
+        order: -1;
+
+    }
+
+
+    .hobby-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .scenic-card {
+
+        grid-column:
+            span 1;
+
+    }
+
+
+    .about-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .pets-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .connect-box {
+
+        flex-direction:
+            column;
+
+        text-align:
+            center;
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - 700px
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+
+    .navbar {
+
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 15px;
+
+        background:
+            white;
+
+        flex-direction:
+            column;
+
+        box-shadow:
+            var(--shadow);
+
+    }
+
+
+    .navbar.show {
+
+        display: flex;
+
+    }
+
+
+    .nav-link {
+
+        padding:
+            12px;
+
+    }
+
+
+    .quick-grid,
+    .hobby-grid,
+    .pets-grid,
+    .skills-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .music-player {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .album-art {
+
+        min-height:
+            280px;
+
+    }
+
+
+    .player-main {
+
+        padding:
+            30px 22px;
+
+    }
+
+
+    /* MOBILE PROFILE */
+
+    .profile-card {
+
+        width:
+            330px;
+
+    }
+
+
+    .profile-image {
+
+        height:
+            420px;
+
+    }
+
+
+    .profile-decoration {
+
+        width:
+            330px;
+
+        height:
+            450px;
+
+    }
+
+
+    /* MOBILE HOBBY IMAGES */
+
+    .hobby-image {
+
+        height:
+            320px;
+
+    }
+
+
+    /* MOBILE PET IMAGES */
+
+    .pet-image {
+
+        height:
+            360px;
+
+    }
+
+
+    .section-title h2 {
+
+        font-size:
+            34px;
+
+    }
+
+
+    .pet-video-card {
+
+        width:
+            100%;
+
+        margin-top:
+            30px;
+
+        border-radius:
+            12px;
+
+    }
+
+
+    .pet-video-info {
+
+        padding:
+            18px;
+
+    }
+
+
+    .pet-video-info h4 {
+
+        font-size:
+            20px;
+
+    }
+
+
+    .pet-video-info p {
+
+        font-size:
+            12px;
+
+    }
+
+
+    .pet-video-heading h3 {
+
+        font-size:
+            26px;
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - 450px
+   ========================================= */
+
+@media (max-width: 450px) {
+
+    .hero {
+
+        padding-top:
+            110px;
+
+    }
+
+
+    /* SMALL SCREEN PROFILE */
+
+    .profile-card {
+
+        width:
+            290px;
+
+    }
+
+
+    .profile-image {
+
+        height:
+            370px;
+
+    }
+
+
+    .profile-decoration {
+
+        width:
+            290px;
+
+        height:
+            400px;
+
+    }
+
+
+    .floating-note {
+
+        width:
+            40px;
+
+        height:
+            40px;
+
+    }
+
+
+    .hero-text h1 {
+
+        font-size:
+            43px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .main-btn,
+    .outline-btn {
+
+        justify-content:
+            center;
+
+    }
+
+
+    /* SMALL SCREEN HOBBIES */
+
+    .hobby-image {
+
+        height:
+            280px;
+
+    }
+
+
+    /* SMALL SCREEN PETS */
+
+    .pet-image {
+
+        height:
+            320px;
+
+    }
+
+
+    .vinyl {
+
+        width:
+            180px;
+
+        height:
+            180px;
+
+    }
+
+
+    .pet-video-section {
+
+        margin-top:
+            45px;
+
+    }
+
+}
